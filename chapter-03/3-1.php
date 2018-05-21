@@ -73,3 +73,22 @@ EOI;
   echo 15.0;  // 文字列型にキャストされ、整数と判断され、".0"が省略される
   printf('%.1f', 15.0);
 ?>
+
+<h2>3.1.5 論理型</h2>
+<?php
+  $boolean = true;
+  var_dump($boolean);
+
+  $boolean = (bool)1;
+  var_dump($boolean);
+?>
+<h3>PHPがfalseと判断するもの</h3>
+<ul>
+  <li>false(論理型)</li>
+  <li>0(整数型)</li>
+  <li>0.0(浮動小数点数型)</li>
+  <li>空の文字列(""), 文字列のゼロ("0")</li>
+  <li>要素の数がゼロの配列</li>
+  <li>null(値がセットされていない変数を含む)</li>
+  <li>空のタグから作成されたSimpleXMLオブジェクト</li>
+</ul>
