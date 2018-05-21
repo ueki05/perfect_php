@@ -99,3 +99,49 @@ EOI;
 
 <h2>3.1.7 オブジェクト</h2>
 <p>オブジェクト型は、クラスをnew演算子によってインスタンス化したものへの参照。5章(P.119)で詳しく説明する。</p>
+
+<h2>3.1.8 リソース</h2>
+<p>リソース型は、オープンされたファイルやデータベース接続など、何らかの外部リソースへの参照を保持している。</p>
+<p>PHPには、多くの外部リソースを扱う拡張昨日がハンドルされているため、多くのリソース型とその初期化関数が存在している。</p>
+
+<table border="1">
+  <thead>
+    <tr>
+      <th>リソース</th>
+      <th>拡張機能</th>
+      <th>初期化関数</th>
+      <th>補足</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>sockets file</td>
+      <td>sockets</td>
+      <td>socket_create()</td>
+      <td>ソケットリソース</td>
+    </tr>
+    <tr>
+      <td>curl</td>
+      <td>curl</td>
+      <td>curl_init()など</td>
+      <td>curlリソース</td>
+    </tr>
+    <tr>
+      <td>mysql link</td>
+      <td>mysql</td>
+      <td>mysql_connect()</td>
+      <td>MySQLサーバへの接続リソース</td>
+    </tr>
+    <tr>
+      <td>stream</td>
+      <td>標準など</td>
+      <td>fopen()など</td>
+      <td>プロトコルラッパー</td>
+    </tr>
+  </tbody>
+</table>
+<p>変数のもつリソース型の種類は、get_resource_type()関数を使って調べることができる。</p>
+<?php
+  $mysql = mysql_connect('localhost', 'root', 'root');
+  var_dump(get_resource_type($mysql));
+?>
