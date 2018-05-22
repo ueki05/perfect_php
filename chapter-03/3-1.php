@@ -145,3 +145,29 @@ EOI;
   $mysql = mysql_connect('localhost', 'root', 'root');
   var_dump(get_resource_type($mysql));
 ?>
+
+<h2>3.1.9 null</h2>
+<p>変数がnullとなる場合</p>
+<ul>
+  <li>定数nullが代入されている場合</li>
+  <li>値が何も代入されていない場合</li>
+  <li>unset()されている場合</li>
+</ul>
+<?php
+  // 返り値を返さない関数の定義
+  function no_return_func() {
+  }
+
+  $null_value = no_return_func(); // nullが代入される
+  var_dump($null_value);
+?>
+<?php
+  $var = 1;
+  var_dump(isset($var));  // true
+  $var = null;
+  var_dump(isset($var));  // false
+  var_dump($var);         // null
+  unset($var);
+  var_dump(isset($var));  // false
+  var_dump($var);         // Notice: Undefined variable
+?>
