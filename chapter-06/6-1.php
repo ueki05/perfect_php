@@ -17,3 +17,8 @@
 <?php endif ?>
 <p>It's <?php echo $hour; ?> o'clock now.</p>
 
+<h2>6.1.3 HTTPメソッド</h2>
+<h3>GETメソッド</h3>
+
+<h3>POSTメソッド</h3>
+
