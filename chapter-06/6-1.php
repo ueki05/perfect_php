@@ -41,3 +41,23 @@
 </ul>
 HTTPメソッドを適切に使い分けることはHTTPプロトコルにおける原則
 
+<h2>6.1.5 スーパーグローバル変数</h2>
+どのスコープからも参照可能な変数
+<ul>
+  <li>$_GET</li>
+  <?php var_dump($_GET); ?>
+  <li>$_POST</li>
+  <?php var_dump($_POST); ?>
+  <li>$_FILES</li>
+  <?php var_dump($_FILES); ?>
+  <li>$_COOKIE</li>
+  <?php var_dump($_COOKIE); ?>
+  <li>$_REQUEST</li>
+  <?php var_dump($_REQUEST); ?>
+  <li>$_SERVER</li>
+  <?php var_dump($_SERVER); ?>
+  <li>$_ENV</li>
+  <?php var_dump($_ENV); ?>
+  <li>$_SESSION</li>
+  <?php var_dump($_SESSION); ?>
+</ul>
