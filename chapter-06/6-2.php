@@ -27,3 +27,6 @@ CREATE TABLE `post` (
 ) ENGINE = INNODB;
 </p>
 
+<h2>6.2.4 アプリケーションを配置するディレクトリの作成</h2>
+oneline_bbsディレクトリを作成
+
