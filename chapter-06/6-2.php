@@ -6,3 +6,7 @@
   <li>投稿されたコメントの一覧</li>
 </ul>
 
+<h2>6.2.2 データベースの作成</h2>
+<p>今回はoneline_bbsデータベースを作成する。</p>
+<p>CREATE DATABASE `oneline_bbs` DEFAULT CHARACTER SET utf8;</p>
+
