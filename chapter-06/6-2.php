@@ -72,3 +72,12 @@ bbs.phpにコメント投稿機能を作成
 <h3>SQL文の実行</h3>
 <p>mysql_query()関数を用いる。</p>
 
+<h2>6.2.7 エラーメッセージ出力</h2>
+<p>count()関数を用いて$errors変数にエラーメッセージがh組まれているかをチェック</p>
+
+<h3>HTML特殊文字のエスケープ</h3>
+<p>htmlspecialchars()関数でエスケープ処理を行うことで、クロスサイトスクリプティング等の脆弱性対策。</p>
+<p><a href="http://php.net/manual/ja/function.htmlspecialchars.php">http://php.net/manual/ja/function.htmlspecialchars.php</a></p>
+
+<p>基本的にはエスケープ処理を行い、エスケープしたくない場所ではエスケープ処理をしないようにする」という考えでプログラムを作ることがセキュアなWebアプリケーションを作る上で必要。</p>
+
