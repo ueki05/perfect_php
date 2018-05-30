@@ -42,6 +42,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     // 保存する
     mysql_query($sql, $link);
+
+    mysql_close($link);
+
+    header('Location: http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']);
   }
 }
 
