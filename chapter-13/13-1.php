@@ -15,3 +15,16 @@ $formatted = sprintf("%+010d", $a);
 echo $formatted;
 ?>
 
+<h2>13.1.3 数値をフォーマットする</h2>
+<?php
+echo number_format(100000000);
+?>
+
+<?php
+echo number_format(100000000, 5);
+?>
+
+<?php
+echo number_format(100000000, 5, ',', ' ');
+?>
+
