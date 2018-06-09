@@ -28,3 +28,15 @@ echo number_format(100000000, 5);
 echo number_format(100000000, 5, ',', ' ');
 ?>
 
+<h2>13.1.4 HTMLタグをエスケープする</h2>
+<?php
+$html = '<a href="http://example.com/">example link</a>';
+echo $html;
+echo htmlspecialchars($html, ENT_QUOTES);
+?>
+<ul>
+  <li>ENT_COMPAT: デフォルト値。シングルクオートは変換し、ダブルクォートは変換しない。</li>
+  <li>ENT_QUOTES: ダブルクォートもシングルクォートも変換する。</li>
+  <li>ENT_NOQUOTES: ダブルクォートもシングルクォートも変換しない。</li>
+</ul>
+
