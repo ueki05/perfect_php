@@ -40,3 +40,12 @@ echo htmlspecialchars($html, ENT_QUOTES);
   <li>ENT_NOQUOTES: ダブルクォートもシングルクォートも変換しない。</li>
 </ul>
 
+<h2>13.1.5 改行を&lt;br&gt;タグに変換する</h2>
+<?php
+$contents = <<<EOI
+それぞれの末尾には、改行文字が入っており、
+brタグは入っていませんが、nl2br()関数を使うと
+HTMLでは改行を表すbrタグを挿入してくれる
+EOI;
+echo nl2br($contents, true);
+?>
