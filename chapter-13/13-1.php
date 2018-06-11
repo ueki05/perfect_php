@@ -66,3 +66,10 @@ echo strlen($str), PHP_EOL;
 echo mb_strlen($str), PHP_EOL;
 ?>
 
+<h2>13.1.7 文字列の一部を切り出す</h2>
+<?php
+$str = '2010年05月16日';
+echo mb_substr($str, 5), PHP_EOL;
+echo mb_substr($str, 5, 3), PHP_EOL;
+?>
+
