@@ -49,3 +49,20 @@ HTMLでは改行を表すbrタグを挿入してくれる
 EOI;
 echo nl2br($contents, true);
 ?>
+
+<h2>13.1.6 文字列の長さを調べる</h2>
+<?php
+// POSTされたデータを調べる
+if (mb_strlen($_GET['text']) > 100) {
+  echo 'textは100文字以内にしてください';
+} else {
+  echo 'textは100文字以内です';
+}
+?>
+
+<?php
+$str = '今日は晴れです';
+echo strlen($str), PHP_EOL;
+echo mb_strlen($str), PHP_EOL;
+?>
+
