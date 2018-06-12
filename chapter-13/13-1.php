@@ -79,3 +79,18 @@ $array = array(1, 10, 100, 'foo' => 'bar',);
 echo implode(',', $array);
 ?>
 
+<h2>13.1.9 文字列の両端から不要な空白文字を除去する</h2>
+<?php
+$string = "\tThe String\n";
+echo "original: ", PHP_EOL;
+var_dump($string);
+echo "trim: ", PHP_EOL;
+var_dump(trim($string));
+echo "ltrim: ", PHP_EOL;
+var_dump(ltrim($string));
+echo "rtrim: ", PHP_EOL;
+var_dump(rtrim($string));
+echo "trim (with option): ", PHP_EOL;
+var_dump(trim($string, "\ngnT\t"));
+?>
+
