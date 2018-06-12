@@ -73,3 +73,9 @@ echo mb_substr($str, 5), PHP_EOL;
 echo mb_substr($str, 5, 3), PHP_EOL;
 ?>
 
+<h2>13.1.8 配列を文字列として連結する</h2>
+<?php
+$array = array(1, 10, 100, 'foo' => 'bar',);
+echo implode(',', $array);
+?>
+
