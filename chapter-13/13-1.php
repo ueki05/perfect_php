@@ -94,3 +94,20 @@ echo "trim (with option): ", PHP_EOL;
 var_dump(trim($string, "\ngnT\t"));
 ?>
 
+<h2>13.1.10 大文字や小文字の変換をする</h2>
+<?php
+$string = 'The perect PHP';
+
+echo 'strtolower: ', strtolower($string), PHP_EOL;
+echo 'strtoupper: ', strtoupper($string), PHP_EOL;
+echo 'ucfirst: ', ucfirst($string), PHP_EOL;
+echo 'lcfirst: ', lcfirst($string), PHP_EOL;
+echo 'ucwords: ', ucwords($string), PHP_EOL;
+?>
+
+<?php
+$string = 'Ｔｈｅ　ｐｅｒｆｅｃｔ　ＰＨＰ';
+echo 'mb_strtolower: ', mb_strtolower($string), PHP_EOL;
+echo 'mb_strtoupper: ', mb_strtoupper($string), PHP_EOL;
+?>
+
