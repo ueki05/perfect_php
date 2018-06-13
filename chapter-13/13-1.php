@@ -111,3 +111,9 @@ echo 'mb_strtolower: ', mb_strtolower($string), PHP_EOL;
 echo 'mb_strtoupper: ', mb_strtoupper($string), PHP_EOL;
 ?>
 
+<h2>13.1.11 URL文字列を解析する</h2>
+<?php
+$url = 'http://example.com/path/to/file?user_id=4#section';
+var_dump(parse_url($url));
+?>
+
