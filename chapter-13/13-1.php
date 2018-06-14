@@ -124,3 +124,9 @@ $string = 'この関数は、長い文字列を省略する際に便利です。
 echo mb_strimwidth($string, 0, 100, '...');
 ?>
 
+<h2>13.1.13 全角・半角を変換する</h2>
+<?php
+$kana = "半角ｶﾅを全角カナに、全角ＥＩＳＵＵを半角EISUUに変換します";
+echo mb_convert_kana($kana, "KVa");
+?>
+
