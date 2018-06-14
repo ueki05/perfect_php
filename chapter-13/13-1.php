@@ -117,3 +117,10 @@ $url = 'http://example.com/path/to/file?user_id=4#section';
 var_dump(parse_url($url));
 ?>
 
+<h2>13.1.12 文字列を丸める</h2>
+<?php
+$string = 'この関数は、長い文字列を省略する際に便利です。ちょうど、Webサイトによく見られる、本文を途中で区切り、「続きを読む」のリンクを貼るような処理に多く用いられます。';
+
+echo mb_strimwidth($string, 0, 100, '...');
+?>
+
