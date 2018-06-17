@@ -24,3 +24,22 @@ var_dump($pudding);
 array_push($array, 'marshmallow', 'cookie'); // 'candy', 'chocolate', 'marshmallow', 'cookie'
 var_dump($array);
 ?>
+
+<h2>13.3.3 配列の要素を並び替える</h2>
+<?php
+$array = array(10, 5, 3, 6, 1);
+sort($array);
+var_dump($array);
+rsort($array);
+var_dump($array);
+?>
+
+<h3>sort()系関数の第2引数</h3>
+<?php
+$array1 = array('9', '1e1', '8a');
+$array2 = array('1e1', '9', '8a');
+sort($array1);
+sort($array2);
+var_dump($array1, $array2);
+?>
+
