@@ -50,3 +50,12 @@ echo count($array), PHP_EOL;
 echo count($array, COUNT_RECURSIVE), PHP_EOL;
 ?>
 
+<h2>13.3.5 文字列を分割して配列にする</h2>
+<?php
+$paths = explode(PATH_SEPARATOR, get_include_path());
+
+foreach ($paths as $path) {
+  // echo realpath($path), PHP_EOL;
+}
+?>
+
