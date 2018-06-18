@@ -43,3 +43,10 @@ sort($array2);
 var_dump($array1, $array2);
 ?>
 
+<h2>13.3.4 配列の要素数を知る</h2>
+<?php
+$array = array(0, 1, 2, 3, array(4, 5,),);
+echo count($array), PHP_EOL;
+echo count($array, COUNT_RECURSIVE), PHP_EOL;
+?>
+
