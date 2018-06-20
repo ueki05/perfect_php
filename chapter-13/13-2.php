@@ -59,3 +59,11 @@ foreach ($paths as $path) {
 }
 ?>
 
+<h2>13.3.6 配列の要素を複数の変数へ代入する</h2>
+<?php
+$array = array('hoge', 'fuga', 'piyo');
+list($hoge, , $piyo) = $array;
+var_dump($hoge);
+var_dump($piyo);
+?>
+
