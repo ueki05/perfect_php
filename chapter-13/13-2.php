@@ -84,3 +84,19 @@ $setting = array_merge($default_setting, $new_setting);
 var_dump($setting);
 ?>
 
+<h2>13.3.8 配列のキーをすべて取得する</h2>
+<?php
+$array = array(
+  1, 2,
+  'foo' => 'baz',
+  'bar' => 'baz',
+  'hoge' => 'fuga',
+);
+
+$keys = array_keys($array);
+var_dump($keys);
+
+$keys_search = array_keys($array, 'baz');
+var_dump($keys_search);
+?>
+
