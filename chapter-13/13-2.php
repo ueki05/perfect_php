@@ -67,3 +67,20 @@ var_dump($hoge);
 var_dump($piyo);
 ?>
 
+<h2>13.3.7 配列を結合する</h2>
+<?php
+$default_setting = array(
+  'key1' => 'value1',
+  'key2' => 123,
+  'key3' => 'true',
+);
+
+$new_setting = array(
+  'key1' => 'value2',
+  'key3' => false,
+);
+
+$setting = array_merge($default_setting, $new_setting);
+var_dump($setting);
+?>
+
