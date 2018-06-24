@@ -118,3 +118,9 @@ $array = array('1', '2', '3');
 var_dump(in_array(2, $array));
 var_dump(in_array(2, $array, true));
 ?>
+
+<h2>13.3.10 配列を指定した値で埋める</h2>
+<?php
+$array = array_fill(0, 100, 1);
+var_dump($array);
+?>
