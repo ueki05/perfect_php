@@ -100,3 +100,21 @@ $keys_search = array_keys($array, 'baz');
 var_dump($keys_search);
 ?>
 
+<h2>13.3.9 配列に値が含まれるか調べる</h2>
+<?php
+$array = array(
+  'banana'  =>  'yello',
+  'apple'   =>  'red',
+  'orange'  =>  'orange',
+  'lemon'   =>  'yello',
+);
+
+var_dump(in_array('yello', $array));
+var_dump(array_search('yello', $array));
+?>
+
+<?php
+$array = array('1', '2', '3');
+var_dump(in_array(2, $array));
+var_dump(in_array(2, $array, true));
+?>
